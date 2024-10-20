@@ -8,12 +8,13 @@
             color: #F3F3F3;
             text-align: center;
             font-family: 'Fira Code', monospace;
-            height: 100vh;
             margin: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
         }
         img {
             height: 300px;
@@ -22,6 +23,7 @@
         .about-section {
             max-width: 420px;
             text-align: left;
+            width: 100%;
         }
         h2 {
             color: #FFFFFF;
@@ -33,13 +35,21 @@
             font-size: 16px;
             color: #F3F3F3;
         }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; 
+            }
+            h2, p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
     <img src="/images/API.beerCo[]_logo_nobg.png" alt="Logo">
     <div class="about-section">
         <h2>About API.beerCo[]</h2>
-        <p>API.beerCo[] is a collective of friends who brew beer together. On this site, we open-source all our recipes, techniques, and experiences from our adventures down brewery lane. We love building things and learning, and brewing is just another outlet for that passion. Every batch is a hands-on learning experience where we experiment, refine, and iterate, thanks to beer’s short fermentation cycle. And, of course, tasting the by-product isn’t too bad either! :)</p>
+        <p>API.beerCo[] is a collective of friends who brew beer together. On this site, we open-source all our recipes, techniques, and experiences from our escapades down brewery lane. We love building things and learning stuff, and brewing is another perfect outlet for that. Every batch is a hands-on learning experience where we, thanks to the quick fermentation cycle of beer, can learn and iterate quickly. And, of course, tasting the by-product isn’t too bad either! :)</p>
     </div>
 </body>
 </html>
