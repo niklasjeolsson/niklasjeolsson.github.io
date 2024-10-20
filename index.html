@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -13,7 +14,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 100vh; 
+            height: 100vh;
             padding: 40px;
             box-sizing: border-box;
         }
@@ -22,9 +23,14 @@
             margin-bottom: 10px;
         }
         .about-section {
-            max-width: 430px;
-            text-align: left;
+            max-width: 400px;
             width: 100%;
+            text-align: left;
+        }
+        @media (max-width: 450px) {
+            .about-section {
+                max-width: 90vw;
+            }
         }
         h2 {
             color: #FFFFFF;
@@ -36,21 +42,13 @@
             font-size: 16px;
             color: #F3F3F3;
         }
-        @media (max-width: 600px) {
-            body {
-                padding: 30px; 
-            }
-            h2, p {
-                font-size: 14px;
-            }
-        }
     </style>
 </head>
 <body>
     <img src="/images/API.beerCo[]_logo_nobg.png" alt="Logo">
     <div class="about-section">
         <h2>About API.beerCo[]</h2>
-        <p>API.beerCo[] is a collective of friends who brew beer together. On this site, we open-source all our recipes, techniques, and experiences from our escapades down brewery lane. We love building things and learning stuff, and brewing is another perfect outlet for that. Every batch is a hands-on learning experience where we, thanks to the fast fermentation cycle of beer, can learn and iterate quickly. And, of course, tasting the by-product isn’t too bad either! :)</p>
+        <p>API.beerCo[] is a collective of friends who brew beer together. On this site, we open-source all our recipes, techniques, and experiences from our escapades down brewery lane. We love building things and learning, and brewing is another perfect outlet for that. Every batch is a hands-on learning experience where, thanks to the fast fermentation cycle of beer, we can learn and iterate quickly. And, of course, tasting the by-product isn’t too bad either! :)</p>
     </div>
 </body>
 </html>
